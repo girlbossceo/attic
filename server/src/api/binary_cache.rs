@@ -223,7 +223,14 @@ async fn get_nar(
                 });
                 let body = Body::from_stream(stream);
 
-                Ok(body.into_response())
+                let response = Response::builder()
+                    .status(StatusCode::OK)
+                    .header("Content-Type", mime::NAR)
+                    .body(body)
+                    .unwrap()
+                    .into_response();
+
+                Ok(response)
             }
         }
     } else {
@@ -260,7 +267,14 @@ async fn get_nar(
         });
         let body = Body::from_stream(merged);
 
-        Ok(body.into_response())
+        let response = Response::builder()
+            .status(StatusCode::OK)
+            .header("Content-Type", mime::NAR)
+            .body(body)
+            .unwrap()
+            .into_response();
+
+        Ok(response)
     }
 }
 
