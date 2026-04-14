@@ -13,7 +13,7 @@ attic = { path = "../attic" }
 
 anyhow = "1.0.71"
 async-channel = "2.3.1"
-bytes = "1.4.0"
+bytes = "1.11.1"
 clap = { version = "4.3", features = ["derive"] }
 clap_complete = "4.3.0"
 const_format = "0.2.30"
@@ -31,11 +31,11 @@ serde = { version = "1.0.163", features = ["derive"] }
 serde_json = "1.0.96"
 toml = "0.8.8"
 tracing = "0.1.37"
-tracing-subscriber = "0.3.17"
+tracing-subscriber = "0.3.20"
 xdg = "2.5.0"
 
 [dependencies.tokio]
-version = "1.28.2"
+version = "1.38.2"
 features = [
 	"fs",
 	"io-util",

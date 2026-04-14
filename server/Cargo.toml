@@ -44,7 +44,7 @@ humantime = "2.1.0"
 humantime-serde = "1.1.1"
 itoa = "=1.0.5"
 maybe-owned = "0.3.4"
-rand = "0.8.5"
+rand = "0.10.1"
 regex = "1.8.3"
 ryu = "1.0.13"
 sha2 = { version = "0.10.6", features = ["asm"] }
